@@ -1,0 +1,12 @@
+meta:
+  environment: node
+  toolchain:
+    name: npm
+    version: "26"
+
+build:
+  additionalCommands: npm install --include=dev && npm run build
+
+run:
+  scriptName: src/server/index.ts
+  containerPort: 80

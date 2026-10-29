@@ -98,7 +98,7 @@ server.on('error', (error) => {
   throw error
 })
 
-server.listen(port, () => {
+server.listen(port, '0.0.0.0', () => {
   process.stdout.write(`${hostUrl.href}\n`)
 })
 
